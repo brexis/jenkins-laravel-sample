@@ -9,6 +9,11 @@ pipeline {
         stage('Build') {
             steps {
                 /**
+                 * Install Git
+                 */
+                sh 'apt-get install git -y'
+
+                /**
                  * Install composer
                  */
                 sh '''
