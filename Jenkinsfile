@@ -11,7 +11,7 @@ pipeline {
                  * Install composer
                  */
                 sh '''
-                    wger https://getcomposer.org/composer.phar
+                    wget https://getcomposer.org/composer.phar
                     php composer.phar self-update
                     php composer.phar install --no-interaction
                 '''
