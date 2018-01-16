@@ -11,7 +11,9 @@ pipeline {
                 /**
                  * Install Git
                  */
-                sh 'apt-get install git -y'
+                sh '''apt-get update
+                apt-get install git -y
+                '''
 
                 /**
                  * Install composer
