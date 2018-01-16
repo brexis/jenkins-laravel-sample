@@ -26,6 +26,8 @@ pipeline {
                     php -r "unlink('composer-setup.php');"
                     php composer.phar self-update
                     php composer.phar install --no-interaction
+                    ls -la
+                    vendor/bin/phpunit
                 '''
             }
         }
